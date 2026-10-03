@@ -1,0 +1,3 @@
+[submodule "projects/01-agent-harness/chess_app"]
+	path = projects/01-agent-harness/chess_app
+	url = https://github.com/cmu-agents/chess-app.git

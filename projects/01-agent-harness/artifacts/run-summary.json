@@ -1,0 +1,69 @@
+{
+  "description": "Aggregate evidence from local saved trajectories; raw prompts and responses are excluded from this portfolio.",
+  "runs": [
+    {
+      "source_file": "part1-trajectory.json",
+      "model_responses": 14,
+      "tool_calls": {
+        "execute": 17,
+        "invoke_skill": 1,
+        "send_message": 1
+      },
+      "compaction_events": 0
+    },
+    {
+      "source_file": "part3-legal-moves-deepseek.json",
+      "model_responses": 75,
+      "tool_calls": {
+        "play_move": 74
+      },
+      "compaction_events": 0,
+      "saved_result": {
+        "game_over": true,
+        "status": "Draw"
+      }
+    },
+    {
+      "source_file": "part3-legal-moves-gpt-oss.json",
+      "model_responses": 0,
+      "tool_calls": {},
+      "compaction_events": 0
+    },
+    {
+      "source_file": "part3-no-legal-moves-deepseek.json",
+      "model_responses": 33,
+      "tool_calls": {
+        "play_move": 33
+      },
+      "compaction_events": 0,
+      "saved_result": {
+        "game_over": true,
+        "status": "White wins"
+      }
+    },
+    {
+      "source_file": "part3-no-legal-moves-gpt-oss.json",
+      "model_responses": 0,
+      "tool_calls": {},
+      "compaction_events": 0
+    },
+    {
+      "source_file": "part3-python-skill-trajectory.json",
+      "model_responses": 12,
+      "tool_calls": {
+        "invoke_skill": 1,
+        "play_move": 1,
+        "run_python": 10
+      },
+      "compaction_events": 0
+    },
+    {
+      "source_file": "part3-trajectory.json",
+      "model_responses": 49,
+      "tool_calls": {
+        "play_move": 49
+      },
+      "compaction_events": 0
+    }
+  ]
+}
